@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steel Mill</title>
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+   <link rel="stylesheet" href="{% static 'css/steel-mill.css' %}">
+  <link rel="stylesheet" href="{% static 'css/neplan-about.css' %}">
+  <link rel="stylesheet" href="{% static 'css/consult-block.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" href="{% static 'images/logo1.png' %}">
+  <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+  <script defer src="{% static 'js/main.js' %}"></script>
+
+
+</head>
+
+<body>
+  {% include 'header.html' %}
+  {% include 'request_demo_modal.html' %}
+  {% load static %}
+  <section class="steel-mill hero-steel-mill" id="hero-steel-mill">
+  <div class="slider-container-steel-mill">
+
+    <!-- Slide 1 — Cold Billet Shearing -->
+    <article class="slide-steel-mill active-steel-mill" style="background-image:url('../static/images/image1.avif');">
+      <div class="overlay-steel-mill"></div>
+      <div class="inner-steel-mill">
+        <div class="content-steel-mill reveal-left-steel-mill">
+          <p class="eyebrow-steel-mill">Steel Mill · Primary Processing</p>
+          <h1 class="title-steel-mill">Cold Billet Shearing Machines</h1>
+          <p class="desc-steel-mill">
+            Precision shearing for billets at ambient temperature to achieve accurate cut lengths and clean edges.
+            We supply custom builds matched to your mill throughput and downstream requirements.
+          </p>
+          <p class="desc-steel-mill" style="margin-top:.25rem;">
+            <strong>Send us your specs:</strong> cutting capacity, body material, crank, slide, bearings, gears, flywheel,
+            pulley, bush, blade count & ratings.
+          </p>
+          <a href="#contact" class="btn-steel-mill">Send Specs for a Quote</a>
+        </div>
+
+        <!-- square card on the right -->
+        <aside class="card-steel-mill reveal-up-steel-mill">
+          <span class="card-kicker-steel-mill">1. Cold Billet Shear</span>
+          <h3 class="card-title-steel-mill">
+            High-accuracy cuts, robust frames, and low maintenance.
+          </h3>
+          <a class="card-link-steel-mill" href="#contact">Required Specs →</a>
+        </aside>
+      </div>
+    </article>
+
+    <!-- Slide 2 — Rolling Mill -->
+    <article class="slide-steel-mill" style="background-image:url('../static/images/image2.avif');">
+      <div class="overlay-steel-mill"></div>
+      <div class="inner-steel-mill">
+        <div class="content-steel-mill reveal-left-steel-mill">
+          <p class="eyebrow-steel-mill">Steel Mill · Long Products</p>
+          <h1 class="title-steel-mill">Roughing, Intermediate & Finishing Mills</h1>
+          <p class="desc-steel-mill">
+            Complete rolling train design & supply—from roughing stands to intermediate and multi-stand finishing mills—
+            delivering uniform thickness, tight tolerances, and high throughput.
+          </p>
+          <p class="desc-steel-mill" style="margin-top:.25rem;">
+            We also supply <strong>Three-High Rolling Mills</strong> for multi-pass reductions and single-side conditioning,
+            ideal for cladded materials or targeted thickness adjustments.
+          </p>
+          <a href="#contact" class="btn-steel-mill">Discuss Your Mill Layout</a>
+        </div>
+
+        <aside class="card-steel-mill reveal-up-steel-mill">
+          <span class="card-kicker-steel-mill">2. Rolling Mill</span>
+          <h3 class="card-title-steel-mill">
+            Roughing • Intermediate • Finishing • Three-High
+          </h3>
+          <a class="card-link-steel-mill" href="#contact">Configurations & Stands →</a>
+        </aside>
+      </div>
+    </article>
+
+    <!-- Slide 3 — Shearing + Bending/Cutting -->
+    <article class="slide-steel-mill" style="background-image:url('../static/images/image3.avif');">
+      <div class="overlay-steel-mill"></div>
+      <div class="inner-steel-mill">
+        <div class="content-steel-mill reveal-left-steel-mill">
+          <p class="eyebrow-steel-mill">Steel Mill · Finishing & Rebar</p>
+          <h1 class="title-steel-mill">Hot/Cold Shear & Rebar Bending/Cutting</h1>
+          <p class="desc-steel-mill">
+            <strong>Flying / Hot Cutting / End Cut Shears:</strong> cut at line speed with custom lengths, trim edges with
+            superior brightness and smoothness—installed near roughing or finishing stands.
+          </p>
+          <p class="desc-steel-mill" style="margin-top:.25rem;">
+            <strong>Bar Bending (iENG/BBM-52):</strong> 6–42&nbsp;mm, 5&nbsp;HP 3-phase, heavy reduction gearbox, auto control. <br>
+            <strong>Bar Cutting (iENG/BCM-GQ-52):</strong> 6–42&nbsp;mm, 4&nbsp;kW 3-phase, 2880&nbsp;RPM—built for continuous duty.
+          </p>
+          <a href="#contact" class="btn-steel-mill">Request Models & Datasheets</a>
+        </div>
+
+        <aside class="card-steel-mill reveal-up-steel-mill">
+          <span class="card-kicker-steel-mill">3. Shearing & Bending</span>
+          <h3 class="card-title-steel-mill">
+            Flying/Hot/End Shears · Rebar Benders & Cutters
+          </h3>
+          <a class="card-link-steel-mill" href="#contact">Models & Specs →</a>
+        </aside>
+      </div>
+    </article>
+
+    <!-- ONE set of arrows (clickable on every slide) -->
+    <div class="arrows-steel-mill">
+      <button class="prev-steel-mill" aria-label="Previous slide">‹</button>
+      <button class="next-steel-mill" aria-label="Next slide">›</button>
+    </div>
+
+  </div>
+</section>
+<section class="core-wrap-core-steel-mill" id="core-values">
+  <div class="core-grid-core-steel-mill">
+
+    <!-- Left: hero image with experience badge -->
+    <figure class="core-media-core-steel-mill reveal-left-core-steel-mill">
+      <!-- replace src with your image -->
+      <img src="../static/images/image4.avif" alt="Team operating robotic welding arm">
+      <figcaption class="core-badge-core-steel-mill">
+        <span class="core-years-core-steel-mill">25 <br>  </span>
+        <span class="core-note-core-steel-mill">Years of Experience</span>
+      </figcaption>
+    </figure>
+
+    <!-- Right: copy + CTA -->
+    <div class="core-copy-core-steel-mill">
+      <p class="core-kicker-core-steel-mill reveal-down-core-steel-mill">Core Values</p>
+
+      <h2 class="core-title-core-steel-mill reveal-right-core-steel-mill">
+        Trusted Partner for Steel Mill Manufacturing &amp; Construction
+      </h2>
+
+      <p class="core-lead-core-steel-mill reveal-right-core-steel-mill" data-reveal-delay="120">
+        iEngineering delivers turnkey solutions for steel plants—covering
+        <strong>cold billet shearing, rolling (roughing · intermediate · finishing), three-high rolling, and
+        bending &amp; cutting</strong>. We design, supply, install, and commission complete lines, upgrades, and
+        controls with a focus on <strong>uptime, safety, and product quality</strong>.
+      </p>
+
+      <a href="#contact" class="core-cta-core-steel-mill reveal-up-core-steel-mill" data-reveal-delay="240">
+        Get Your Free Quote <span>↗</span>
+      </a>
+
+      <!-- Feature bar -->
+      <div class="core-bar-core-steel-mill reveal-up-core-steel-mill" data-reveal-delay="360">
+        <article class="core-item-core-steel-mill">
+          <div class="core-ico-core-steel-mill">⚙️</div>
+          <h3>Our Mission</h3>
+          <p>
+            Maximise throughput and yield with robust equipment, precise controls, and fast changeovers—
+            while reducing energy per ton and unplanned downtime.
+          </p>
+        </article>
+
+        <span class="core-divider-core-steel-mill" aria-hidden="true"></span>
+
+        <article class="core-item-core-steel-mill">
+          <div class="core-ico-core-steel-mill">📍</div>
+          <h3>Our Vision</h3>
+          <p>
+            Lead globally in <strong>safe, efficient, and future-ready</strong> steel mills—backed by responsive
+            service, genuine spares, and continuous improvement.
+          </p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ STEEL MILL: SERVICES OVER IMAGE ============ -->
+<section class="steel-strip" id="services">
+  <div class="steel-strip__head reveal-up-core-steel-mill">
+    <div>
+      <p class="steel-strip__kicker">Our Services</p>
+      <h2 class="steel-strip__title">Tailored Solutions For<br>Industry Growth</h2>
+    </div>
+    <a href="#all-services" class="steel-strip__viewall">
+      View All Services <span aria-hidden="true">↗</span>
+    </a>
+  </div>
+
+  <div class="steel-strip__visual reveal-up-core-steel-mill">
+    <!-- background layers handled in CSS -->
+
+    <div class="steel-strip__grid">
+      <!-- 1: Cold Billet Shearing (active by default) -->
+      <article class="steel-tile reveal-up-core-steel-mill">
+        <div class="steel-tile__icon" aria-hidden="true">⚙️</div>
+        <h3 class="steel-tile__title">Cold Billet Shearing</h3>
+        <ul class="steel-tile__list">
+          <li>Cut capacity & blade specs to order</li>
+          <li>Crank/slide, gears, flywheel, pulley</li>
+          <li>Precision body & bearings, low burr</li>
+        </ul>
+        <a href="#shearing" class="steel-tile__link">Read More</a>
+      </article>
+
+      <!-- 2: Rolling Mill -->
+      <article class="steel-tile reveal-up-core-steel-mill">
+        <div class="steel-tile__icon" aria-hidden="true">🏭</div>
+        <h3 class="steel-tile__title">Rolling Mill Lines</h3>
+        <ul class="steel-tile__list">
+          <li>Roughing · Intermediate · Finishing</li>
+          <li>Uniform thickness & profile control</li>
+          <li>High uptime, quick stand changes</li>
+        </ul>
+        <a href="#rolling" class="steel-tile__link">Read More</a>
+      </article>
+
+      <!-- 3: Three-High Rolling Mill -->
+      <article class="steel-tile reveal-up-core-steel-mill">
+        <div class="steel-tile__icon" aria-hidden="true">🔁</div>
+        <h3 class="steel-tile__title">Three-High Rolling</h3>
+        <ul class="steel-tile__list">
+          <li>Multi-pass via wrap-around path</li>
+          <li>Asymmetric roll sizes for % reduction</li>
+          <li>Ideal for cladded/one-side conditioning</li>
+        </ul>
+        <a href="#three-high" class="steel-tile__link">Read More</a>
+      </article>
+
+      <!-- 4: Bending & Cutting -->
+      <article class="steel-tile reveal-up-core-steel-mill">
+        <div class="steel-tile__icon" aria-hidden="true">✂️</div>
+        <h3 class="steel-tile__title">Bending & Cutting</h3>
+        <ul class="steel-tile__list">
+          <li>Bar Benders (Ø6–42&nbsp;mm), auto control</li>
+          <li>Cutters (GQ-52) 4&nbsp;kW · 2880&nbsp;RPM</li>
+          <li>Heavy reduction gearbox, 3-phase</li>
+        </ul>
+        <a href="#bending" class="steel-tile__link">Read More</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= WORK PROCESS ======================= -->
+<section class="wrap-process-steel-mill" id="work-process">
+  <div class="head-process-steel-mill">
+    <h2 class="title-process-steel-mill reveal-process-steel-mill from-up">
+      Work Process
+    </h2>
+  </div>
+
+  <div class="grid-process-steel-mill">
+
+    <!-- 01 -->
+    <article class="card-process-steel-mill reveal-process-steel-mill from-left">
+      <span class="no-process-steel-mill">01</span>
+      <p class="kicker-process-steel-mill">Assessment &amp; PQ Audit</p>
+      <h3 class="h3-process-steel-mill">Shaping the Foundation</h3>
+      <p class="p-process-steel-mill">
+        Site survey, load profiling, data logging, THD/voltage flicker/imbalance checks,
+        PFC requirement study, compliance gap to IEEE/IEC standards, and savings report.
+      </p>
+    </article>
+
+    <!-- 02 -->
+    <article class="card-process-steel-mill reveal-process-steel-mill from-up">
+      <span class="no-process-steel-mill">02</span>
+      <p class="kicker-process-steel-mill">Design &amp; Simulation</p>
+      <h3 class="h3-process-steel-mill">From Ideas to Results</h3>
+      <p class="p-process-steel-mill">
+        Filter topology selection (active/passive/hybrid, detuned/tuned); kvar/amp sizing;
+        NEPLAN-based studies; protection coordination; bills of materials &amp; performance guarantees.
+      </p>
+    </article>
+
+    <!-- 03 -->
+    <article class="card-process-steel-mill reveal-process-steel-mill from-right">
+      <span class="no-process-steel-mill">03</span>
+      <p class="kicker-process-steel-mill">Manufacturing &amp; FAT</p>
+      <h3 class="h3-process-steel-mill">Precision Manufacturing</h3>
+      <p class="p-process-steel-mill">
+        Panel fabrication (APFC/TCPF/CAHFs/SVG/Sine-wave/dit); wiring &amp; functional tests;
+        controller programming; factory acceptance tests with reports; logistics &amp; readiness checklist.
+      </p>
+    </article>
+
+    <!-- 04 -->
+    <article class="card-process-steel-mill reveal-process-steel-mill from-up">
+      <span class="no-process-steel-mill">04</span>
+      <p class="kicker-process-steel-mill">Installation &amp; Commissioning</p>
+      <h3 class="h3-process-steel-mill">Quality Delivery</h3>
+      <p class="p-process-steel-mill">
+        Mounting, cabling, earthing, protection &amp; interlocks; tuning &amp; baseline THD/PF
+        verification; SCADA/PQ meter integration; O&amp;M training; compliance report &amp; handover.
+      </p>
+    </article>
+
+    <!-- 05 -->
+    <article class="card-process-steel-mill reveal-process-steel-mill from-right">
+      <span class="no-process-steel-mill">05</span>
+      <p class="kicker-process-steel-mill">Lifecycle Support</p>
+      <h3 class="h3-process-steel-mill">Continuous Improvement</h3>
+      <p class="p-process-steel-mill">
+        Remote monitoring &amp; analytics, periodic audits, firmware updates, spares/AMC,
+        and optimization to keep systems efficient and compliant over time.
+      </p>
+    </article>
+
+  </div>
+</section>
+<!-- ===================== MACHINES – STEEL MILL ===================== -->
+<section class="machines-wrap-type-steel-mill" id="steel-machines">
+
+  <!-- ========== 1) Cold Billet Shearing Machine ========== -->
+  <article class="machine-type-steel-mill" >
+    <figure class="machine-media-type-steel-mill reveal-type-steel-mill from-left">
+      <img src="../static/images/image4.avif"
+           alt="Cold billet shearing machine cutting billets" />
+    </figure>
+
+    <div class="machine-copy-type-steel-mill" id="cold-billet-mhearing-machine">
+      <p class="machine-kicker-type-steel-mill reveal-type-steel-mill from-down">Steel Mill Machinery</p>
+      <h2 class="machine-title-type-steel-mill reveal-type-steel-mill from-right">
+        Cold Billet Shearing Machine
+      </h2>
+
+      <p class="machine-lead-type-steel-mill reveal-type-steel-mill from-right">
+        High-precision cold shears for cutting billets to customer-specified lengths with clean, low-burr edges.
+        Engineered frames, balanced flywheels, and accurate crank/slide systems deliver repeatable cuts and long service life.
+      </p>
+
+      <div class="machine-cols-type-steel-mill">
+        <div class="machine-col-type-steel-mill reveal-type-steel-mill from-up">
+          <h3 class="machine-sub-type-steel-mill">Key Uses</h3>
+          <ul class="machine-list-type-steel-mill">
+            <li>Cutting mild/low-alloy steel billets at ambient temperature</li>
+            <li>Preparing billets for rolling mills, forging presses, and heat treatment</li>
+            <li>Precision cut-to-length operations with minimal deformation</li>
+          </ul>
+        </div>
+        <div class="machine-col-type-steel-mill reveal-type-steel-mill from-up">
+          <h3 class="machine-sub-type-steel-mill">Applications</h3>
+          <ul class="machine-list-type-steel-mill">
+            <li>Long-product plants (rebar, sections, wire rod)</li>
+            <li>Stock preparation for bar/rod drawing facilities</li>
+            <li>Job-shop and billet conditioning lines</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="machine-bullets-type-steel-mill reveal-type-steel-mill from-right">
+        <h4 class="machine-minihead-type-steel-mill">Why choose this machine?</h4>
+        <ul class="machine-list-type-steel-mill">
+          <li>Rigid body with precision bearings for dimensional stability</li>
+          <li>Crank, gears, flywheel & pulley sized for high throughput</li>
+          <li>Blade materials/angles optimized for long life and low burr</li>
+          <li>Easy maintenance access and reliable lubrication</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <!-- ========== 2) Rolling Mill ========== -->
+  <article class="machine-type-steel-mill is-reverse" id="Rolling-Mill-Lines">
+    <figure class="machine-media-type-steel-mill reveal-type-steel-mill from-right">
+      <img src="../static/images/image4.avif"
+           alt="Rolling mill roughing and finishing stands" />
+    </figure>
+
+    <div class="machine-copy-type-steel-mill">
+      <p class="machine-kicker-type-steel-mill reveal-type-steel-mill from-down">Steel Mill Machinery</p>
+      <h2 class="machine-title-type-steel-mill reveal-type-steel-mill from-left">
+        Rolling Mill Lines (Roughing · Intermediate · Finishing)
+      </h2>
+
+      <p class="machine-lead-type-steel-mill reveal-type-steel-mill from-left">
+        Complete rolling solutions to transform billets into consistent sections, bars, and coils.  
+        Designed for high uptime, precise thickness/profile control, and rapid stand changes.
+      </p>
+
+      <div class="machine-cols-type-steel-mill">
+        <div class="machine-col-type-steel-mill reveal-type-steel-mill from-up">
+          <h3 class="machine-sub-type-steel-mill">Key Uses</h3>
+          <ul class="machine-list-type-steel-mill">
+            <li>Multi-pass reduction of billets into finished long products</li>
+            <li>Thermo-mechanical processing for strength and surface quality</li>
+            <li>Integration with descaling, cooling beds, and coil handling</li>
+          </ul>
+        </div>
+        <div class="machine-col-type-steel-mill reveal-type-steel-mill from-up">
+          <h3 class="machine-sub-type-steel-mill">Applications</h3>
+          <ul class="machine-list-type-steel-mill">
+            <li>Rebar & sections, angle/channel beams, wire rod</li>
+            <li>Special profiles for automotive & construction</li>
+            <li>Modernization/expansion of existing mills</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="machine-bullets-type-steel-mill reveal-type-steel-mill from-left">
+        <h4 class="machine-minihead-type-steel-mill">Why choose this line?</h4>
+        <ul class="machine-list-type-steel-mill">
+          <li>Stand configurations optimized for pass schedules and yield</li>
+          <li>Closed-loop thickness/shape control & tracking</li>
+          <li>Robust drive trains and advanced coolant/scale handling</li>
+          <li>Safety guarding & interlocks across the line</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <!-- ========== 3) Hot & Cold Shear Machine ========== -->
+  <article class="machine-type-steel-mill" id="hot&cold-shear-machine">
+    <figure class="machine-media-type-steel-mill reveal-type-steel-mill from-left">
+      <img src="../static/images/image4.avif"
+           alt="Flying hot shear cutting at line speed" />
+    </figure>
+
+    <div class="machine-copy-type-steel-mill">
+      <p class="machine-kicker-type-steel-mill reveal-type-steel-mill from-down">Steel Mill Machinery</p>
+      <h2 class="machine-title-type-steel-mill reveal-type-steel-mill from-right">
+        Hot &amp; Cold Shear Machine (Flying / End-Cut)
+      </h2>
+
+      <p class="machine-lead-type-steel-mill reveal-type-steel-mill from-right">
+        High-speed flying shears for on-the-fly cutting at mill speed and heavy end-cut shears for trimming and fixed-length cutting.  
+        Servo-synchronized motion ensures accurate lengths and clean cut faces.
+      </p>
+
+      <div class="machine-cols-type-steel-mill">
+        <div class="machine-col-type-steel-mill reveal-type-steel-mill from-up">
+          <h3 class="machine-sub-type-steel-mill">Key Uses</h3>
+          <ul class="machine-list-type-steel-mill">
+            <li>Flying cut to customer length during rolling</li>
+            <li>Front & tail end trimming; sample cutting</li>
+            <li>Shearing hot bars, sections, and billets</li>
+          </ul>
+        </div>
+        <div class="machine-col-type-steel-mill reveal-type-steel-mill from-up">
+          <h3 class="machine-sub-type-steel-mill">Applications</h3>
+          <ul class="machine-list-type-steel-mill">
+            <li>Roughing/intermediate/finishing stands output</li>
+            <li>Cut-to-length & inspection stations</li>
+            <li>Flexible production with quick recipe change</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="machine-bullets-type-steel-mill reveal-type-steel-mill from-right">
+        <h4 class="machine-minihead-type-steel-mill">Why choose these shears?</h4>
+        <ul class="machine-list-type-steel-mill">
+          <li>Servo motion control for precise length at high speed</li>
+          <li>Heat-resistant blades and robust guides</li>
+          <li>Integrated safety & diagnostics for uptime</li>
+          <li>Low maintenance and fast tool changes</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <!-- ========== 4) Bending & Cutting Machines ========== -->
+  <article class="machine-type-steel-mill is-reverse" id="bending-&-cutting-machines">
+    <figure class="machine-media-type-steel-mill reveal-type-steel-mill from-right">
+      <img src="../static/images/image4.avif"
+           alt="Bar bending and cutting machines" />
+    </figure>
+
+    <div class="machine-copy-type-steel-mill">
+      <p class="machine-kicker-type-steel-mill reveal-type-steel-mill from-down">Steel Mill Machinery</p>
+      <h2 class="machine-title-type-steel-mill reveal-type-steel-mill from-left">
+        Bending &amp; Cutting Machines
+      </h2>
+
+      <p class="machine-lead-type-steel-mill reveal-type-steel-mill from-left">
+        Rugged, easy-to-operate bar bending & cutting solutions for construction steel processing with
+        dependable drives, protection, and operator-friendly controls.
+      </p>
+
+      <div class="machine-specs-type-steel-mill">
+        <div class="spec-card-type-steel-mill reveal-type-steel-mill from-up">
+          <h3 class="machine-sub-type-steel-mill">Bar Bending Machine</h3>
+          <ul class="machine-list-type-steel-mill">
+            <li><strong>Model:</strong> iENG/BBM-52</li>
+            <li><strong>Bend Capacity:</strong> 6–42&nbsp;mm</li>
+            <li><strong>Power Rating:</strong> 5&nbsp;HP, 3-Phase</li>
+            <li>Heavy reduction gear box</li>
+            <li>Auto controlling</li>
+            <li>Bends all shapes required in construction</li>
+          </ul>
+        </div>
+
+        <div class="spec-card-type-steel-mill reveal-type-steel-mill from-up">
+          <h3 class="machine-sub-type-steel-mill">Bar Cutting Machine</h3>
+          <ul class="machine-list-type-steel-mill">
+            <li><strong>Model:</strong> iENG/BCM-GQ-52</li>
+            <li><strong>Cutting Diameter:</strong> 6–42&nbsp;mm</li>
+            <li><strong>Motor:</strong> 3-Phase, 4&nbsp;kW</li>
+            <li><strong>Speed:</strong> 2880&nbsp;RPM</li>
+            <li>Robust frame and blade seat for long life</li>
+            <li>Safety guards & ergonomic controls</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </article>
+
+</section>
+
+
+  <section id="about-us" class="cmms-contact-form-wrap">
+    <div class="cmms-contact-form-inner">
+
+      <a href="#contact" class="cmms-contact-form-badge2 reveal-up">
+        <p class="eyebrow-neplan-what-we-bring reveal-up">About us</p>
+      </a>
+
+      <h2 class="title-meet-ieng-about reveal-up">
+        About us – where vision meets execution!
+      </h2>
+
+
+
+      <p class="about-text-abou-ieng reveal-up">
+        iEngineering is your trusted partner for <strong>generator solutions across Australia, Fiji, and India</strong>.
+        We combine global-class engineering expertise with local delivery to ensure the best of both worlds: innovative
+        solutions backed by reliable support, installation, and training.</strong>
+      </p>
+
+    </div>
+  </section>
+
+  <section class="section-neplan-card-with-animation" aria-label="Highlights grid">
+    <div class="container-neplan-card-with-animation">
+      <div class="grid-neplan-card-with-animation" id="grid-neplan-card-with-animation">
+        <!-- 1) IMAGE - top left -->
+        <figure class="card-neplan-card-with-animation img-card-neplan-card-with-animation tri-1 from-left">
+          <img src="{% static 'images/about/vision.png' %}" alt="Operational insight" loading="lazy">
+        </figure>
+
+        <!-- 2) CONTENT - top middle -->
+        <article class="card-neplan-card-with-animation content-card-neplan-card-with-animation tri-2 from-up">
+          <div class="icon-neplan-card-with-animation" aria-hidden="true">👥</div>
+          <h3 class="title-neplan-card-with-animation">Our Mission</h3>
+          <p class="desc-neplan-card-with-animation">
+            At iEngineering Australia, our mission is to enhance efficiency, ensure quality control, and deliver
+            customer satisfaction through innovative engineering solutions. We are committed to global standards and
+            sustainable solutions that create long-term value for our clients and communities.</p>
+        </article>
+
+        <!-- 3) IMAGE - top right -->
+        <figure class="card-neplan-card-with-animation img-card-neplan-card-with-animation tri-1 from-right">
+          <img src="{% static 'images/about/mission.png' %}" alt="Team collaboration" loading="lazy">
+        </figure>
+
+        <!-- 4) CONTENT - bottom left -->
+        <article class="card-neplan-card-with-animation content-card-neplan-card-with-animation tri-3 from-left">
+          <div class="icon-neplan-card-with-animation" aria-hidden="true">🔔</div>
+          <h3 class="title-neplan-card-with-animation">Our Vision</h3>
+          <p class="desc-neplan-card-with-animation">
+            Our vision is to be a global leader in engineering solutions, driving industry leadership, innovation, and
+            customer-centric growth. We aim to inspire through global influence, foster expansion and growth, and play
+            an inspirational role in shaping the future of engineering. </p>
+        </article>
+
+        <!-- 5) IMAGE - bottom middle -->
+        <figure class="card-neplan-card-with-animation img-card-neplan-card-with-animation tri-4 from-up">
+          <img src="{% static 'images/about/values.png' %}" alt="Scenario planning" loading="lazy">
+        </figure>
+
+        <!-- 6) CONTENT - bottom right -->
+        <article class="card-neplan-card-with-animation content-card-neplan-card-with-animation tri-3 from-right">
+          <div class="icon-neplan-card-with-animation" aria-hidden="true">💬</div>
+          <h3 class="title-neplan-card-with-animation">Our Values</h3>
+          <p class="desc-neplan-card-with-animation">
+            Our values guide everything we do: integrity & ethics, a strong commitment to quality, and diversity &
+            inclusion. Safety, reliability, and continuous improvement are the cornerstones of our success, enabling us
+            to deliver trusted and innovative solutions worldwide.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-meet-ieng-about" id="team">
+    <div class="container-meet-ieng-about">
+      <header class="header-meet-ieng-about">
+        <p class="eyebrow-neplan-what-we-bring reveal-up">Our Journey</p>
+        <!-- <h2 class="title-meet-ieng-about reveal-up"></h2> -->
+        <p class="subtitle-meet-ieng-about reveal-up">
+          Founded in 2017, iEngineering Australia has rapidly grown into a trusted technology partner delivering
+          innovative solutions in asset management, IoT, cloud platforms, and digital transformation. From our
+          beginnings as a small engineering services provider, we have expanded our expertise across industries such as
+          utilities, transport, energy, manufacturing, and public infrastructure. Today, we are proud to support
+          organizations across Australia and the Asia-Pacific region with smart, scalable, and future-ready technology
+          solutions.
+        </p>
+      </header>
+
+
+    </div>
+  </section>
+
+  <section class="section-meet-ieng-about" id="team">
+    <div class="container-meet-ieng-about">
+      <header class="header-meet-ieng-about">
+        <p class="eyebrow-neplan-what-we-bring reveal-up">Where We Operate</p>
+
+        <p class="subtitle-meet-ieng-about reveal-up saw">
+          iEngineering Australia operates across Australia, Fiji, and India, delivering reliable technology and asset
+          management solutions to organizations of all sizes-from local enterprises to large multinational companies.
+
+
+        </p>
+      </header>
+
+
+      <!-- =======================
+     NEPLAN - Locations
+     ======================= -->
+      <section class="neplan-locations-wrap">
+        <div class="neplan-locations-grid">
+
+          <!-- Australia – Sydney -->
+          <article class="neplan-locations-card neplan-locations-card--au">
+            <header class="neplan-locations-header">
+              <span class="neplan-locations-icon" aria-hidden="true">
+                <!-- Location pin -->
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                  <path
+                    d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"
+                    fill="currentColor" />
+                </svg>
+              </span>
+              <h3 class="neplan-locations-title reveal-right">Australia – Sydney</h3>
+            </header>
+
+            <p class="neplan-locations-phone reveal-right"><strong>Phone:</strong> +61 (02) 8318 1490</p>
+            <p class="neplan-locations-email reveal-right">
+              <strong class="reveal-right reveal-right">Email:</strong>
+              <a href="mailto:dnaiker@iengaust.com.au reveal-right">dnaiker@iengaust.com.au</a>
+            </p>
+            <p class="neplan-locations-address reveal-right">
+              Warawara Cct, Quakers Hill NSW 2763, Australia
+            </p>
+
+            <a class="neplan-locations-map reveal-right" target="_blank" rel="noopener"
+              href="https://www.google.com/maps?ll=-33.723524,150.875902&z=5&t=m&hl=en-US&gl=US&mapclient=embed&cid=2860432314088839065">
+              View map
+            </a>
+          </article>
+
+          <!-- India – Pune -->
+          <article class="neplan-locations-card neplan-locations-card--in">
+            <header class="neplan-locations-header">
+              <span class="neplan-locations-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                  <path
+                    d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"
+                    fill="currentColor" />
+                </svg>
+              </span>
+              <h3 class="neplan-locations-title reveal-right">India – Pune</h3>
+            </header>
+
+            <p class="neplan-locations-phone reveal-right"><strong>Phone:</strong> +91 9168627258</p>
+            <p class="neplan-locations-email reveal-right">
+              <strong>Email:</strong>
+              <a href="mailto:shila@iengaust.com.au reveal-right">shila@iengaust.com.au</a>
+            </p>
+            <p class="neplan-locations-address reveal-right">
+              Navale IT Zone, Office No. 501, 5th Floor, A-Wing, Near Navale Bridge, Mumbai-Bangalore Highway,
+              Narhe, Pune – 411041.
+            </p>
+
+            <a class="neplan-locations-map reveal-right" target="_blank" rel="noopener"
+              href="https://www.google.com/maps/place/Navale+IT+Zone+Phase2/@18.4597518,73.8199254,17z">
+              View map
+            </a>
+          </article>
+
+          <!-- Fiji – Suva -->
+          <article class="neplan-locations-card neplan-locations-card--fj">
+            <header class="neplan-locations-header">
+              <span class="neplan-locations-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                  <path
+                    d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"
+                    fill="currentColor" />
+                </svg>
+              </span>
+              <h3 class="neplan-locations-title reveal-right">Fiji – Suva</h3>
+            </header>
+
+            <p class="neplan-locations-phone reveal-right"><strong>Phone:</strong> +679 9488589</p>
+            <p class="neplan-locations-email reveal-right">
+              <strong>Email:</strong>
+              <a href="mailto:dnaiker@iengaust.com.au reveal-right">dnaiker@iengaust.com.au</a>
+            </p>
+            <p class="neplan-locations-address reveal-right">
+              Lot 17, River Drive, Pacific Harbour, Navua, Suva, Fiji.
+            </p>
+
+            <a class="neplan-locations-map reveal-right" target="_blank" rel="noopener"
+              href="https://www.google.com/maps/search/Lot+17,+River+Drive+Pacific+Harbour+Navua+Suva+Fiji/">
+              View map
+            </a>
+          </article>
+
+        </div>
+      </section>
+
+    </div>
+  </section>
+  <section id="contact">
+
+
+    {% include "components/contact_block.html" with form_only=True %}
+
+  </section>
+  {% include 'footer.html' %}
+
+  <!-- Link to Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  <script defer src="{% static 'js/demo_form.js' %}"></script>
+  <script defer src="{% static 'js/steel-mill.js' %}"></script>
+  <script defer src="{% static 'js/neplan.js'%}"></script>
+
+
+  <script>(() => {
+      const targets = document.querySelectorAll(
+        '.reveal-top-solar-system-pylon, .reveal-left-solar-system-pylon, .reveal-right-solar-system-pylon, .reveal-up-solar-system-pylon'
+      );
+
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('reveal-in-solar-system-pylon');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.18 });
+
+      targets.forEach((el) => io.observe(el));
+    })();</script>
+  <script>(() => {
+      const SELECTOR = '.reveal-left, .reveal-right, .reveal-up, .reveal-down';
+
+      // Apply per-element delay from data attribute if provided
+      document.querySelectorAll(SELECTOR).forEach(el => {
+        const d = el.getAttribute('data-reveal-delay');
+        if (d) el.style.setProperty('--reveal-delay', /^\d+$/.test(d) ? `${d}ms` : d);
+      });
+
+      // Auto-stagger children inside a .reveal-group
+      document.querySelectorAll('.reveal-group[data-reveal-stagger]').forEach(group => {
+        const step = parseInt(group.dataset.revealStagger, 10) || 120; // ms
+        let i = 0;
+        group.querySelectorAll(SELECTOR).forEach(el => {
+          el.style.setProperty('--reveal-delay', `${i * step}ms`);
+          i++;
+        });
+      });
+
+      // Observe and toggle visibility (replays when scrolling back unless .reveal-once)
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(({ target, isIntersecting }) => {
+          if (isIntersecting) target.classList.add('is-visible');
+          else if (!target.classList.contains('reveal-once'))
+            target.classList.remove('is-visible');
+        });
+      }, { threshold: 0.18 });
+
+      document.querySelectorAll(SELECTOR).forEach(el => io.observe(el));
+    })();</script>
+  <script defer src="{% static 'js/neplan.js'%}"></script>
+  <script src="{% static 'js/main.js'%}"></script>
+  <script src="{% static 'js/steel-mill.js'%}"></script>
+  <script>
+    (function () {
+      const mapEl = document.getElementById('nml-map');
+
+      // 1) Base "Map" (street) layer
+      const street = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        { maxZoom: 19, attribution: '&copy; OpenStreetMap' }
+      );
+
+      // 2) Hybrid = satellite imagery + transparent labels overlay
+      const imagery = L.tileLayer(
+        'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{x}/{y}',
+        { maxZoom: 19, attribution: 'Tiles &copy; Esri - World Imagery' }
+      );
+      const labels = L.tileLayer(
+        'https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png',
+        {
+          subdomains: 'abcd',
+          maxZoom: 20,
+          opacity: 0.95,
+          attribution: '&copy; OpenStreetMap contributors & CartoDB'
+        }
+      );
+      // LayerGroup allows us to add/remove both at once
+      const hybrid = L.layerGroup([imagery, labels]);
+
+      // Create map with default street layer
+      const map = L.map(mapEl, {
+        center: [-15, 120],
+        zoom: 3,
+        layers: [street],
+        zoomControl: true
+      });
+
+      // --- Your markers section (unchanged) ---
+      const LOCS = [
+        { title: 'Australia – Sydney', lat: -33.723524, lng: 150.875902, g: 'https://www.google.com/maps?ll=-33.723524,150.875902&z=5&t=m&hl=en-US&gl=US&mapclient=embed&cid=2860432314088839065' },
+        { title: 'India – Pune', lat: 18.4597518, lng: 73.8199254, g: 'https://maps.app.goo.gl/bDasJq7fErqsphp97' },
+        { title: 'Fiji – Suva', lat: -18.1654467, lng: 178.1218869, g: 'https://maps.app.goo.gl/cDMZMfo9R9Mfdm2Z7' },
+      ];
+      const pin = L.icon({
+        iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
+        iconAnchor: [12, 41], popupAnchor: [0, -34]
+      });
+      const group = L.featureGroup();
+      LOCS.forEach(p => {
+        L.marker([p.lat, p.lng], { icon: pin })
+          .bindPopup(`<strong>${p.title}</strong><br>
+                  <a href="${p.g}" target="_blank" rel="noopener">Open in Google Maps</a>`)
+          .addTo(group);
+      });
+      group.addTo(map);
+      map.fitBounds(group.getBounds().pad(0.3));
+
+      // Set "View larger map" link by center/zoom
+      const viewLink = document.getElementById('nml-view-link');
+      function updateViewLink() {
+        const c = map.getCenter();
+        viewLink.href = `https://www.google.com/maps/@${c.lat.toFixed(5)},${c.lng.toFixed(5)},${map.getZoom()}z`;
+      }
+      map.on('moveend zoomend', updateViewLink);
+      updateViewLink();
+
+      // --- Toggle between street and hybrid ---
+      const toggles = document.querySelectorAll('.nml-toggle');
+      let currentBase = street;           // track current base for removal
+
+      function setBase(which) {
+        if (map.hasLayer(currentBase)) map.removeLayer(currentBase);
+        currentBase = (which === 'hybrid') ? hybrid : street;
+        map.addLayer(currentBase);
+      }
+
+      toggles.forEach(btn => {
+        btn.addEventListener('click', () => {
+          toggles.forEach(b => b.classList.remove('is-active'));
+          btn.classList.add('is-active');
+          setBase(btn.dataset.layer);
+        });
+      });
+    })();
+  </script>
+
+  <script>
+    (function () {
+      const mapEl = document.getElementById('nml-map');
+
+      /* ---------- Base layers ---------- */
+      const street = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        { maxZoom: 19, attribution: '&copy; OpenStreetMap' }
+      );
+
+      // Hybrid = imagery + transparent labels
+      const imagery = L.tileLayer(
+        'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{x}/{y}',
+        { maxZoom: 19, attribution: 'Tiles &copy; Esri - World Imagery' }
+      );
+      const labels = L.tileLayer(
+        'https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png',
+        { subdomains: 'abcd', maxZoom: 20, opacity: 0.95, attribution: '&copy; OpenStreetMap & Carto' }
+      );
+      const hybrid = L.layerGroup([imagery, labels]);
+
+      /* ---------- Map ---------- */
+      const map = L.map(mapEl, {
+        center: [-15, 120],
+        zoom: 3,
+        layers: [street],
+        zoomControl: true
+      });
+
+      /* ---------- Pins ---------- */
+      const LOCS = [
+        { title: 'Australia – Sydney', lat: -33.723524, lng: 150.875902, g: 'https://www.google.com/maps?q=-33.723524,150.875902' },
+        { title: 'India – Pune', lat: 18.4597518, lng: 73.8225003, g: 'https://www.google.com/maps?q=18.4597518,73.8225003' },
+        { title: 'Fiji – Suva', lat: -18.1642523, lng: 177.6272352, g: 'https://www.google.com/maps?q=-18.1642523,177.6272352' },
+      ];
+      const pin = L.icon({
+        iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
+        iconAnchor: [12, 41], popupAnchor: [0, -34]
+      });
+      const group = L.featureGroup();
+      LOCS.forEach(p => {
+        L.marker([p.lat, p.lng], { icon: pin })
+          .bindPopup(`<strong>${p.title}</strong><br>
+                  <a href="${p.g}" target="_blank" rel="noopener">Open in Google Maps</a>`)
+          .addTo(group);
+      });
+      group.addTo(map);
+      map.fitBounds(group.getBounds().pad(0.3));
+
+      /* ---------- Update “View larger map” link ---------- */
+      const viewLink = document.getElementById('nml-view-link');
+      function updateViewLink() {
+        const c = map.getCenter();
+        viewLink.href = `https://www.google.com/maps/@${c.lat.toFixed(5)},${c.lng.toFixed(5)},${map.getZoom()}z`;
+      }
+      map.on('moveend zoomend', updateViewLink);
+      updateViewLink();
+
+      /* ---------- Lock / enable interaction ---------- */
+      const container = map.getContainer();
+
+      function lockMap() {
+        map.scrollWheelZoom.disable();
+        map.touchZoom.disable();
+        map.boxZoom.disable();
+        map.keyboard.disable();
+        map.dragging.disable();
+        if (map.tap) map.tap.disable();
+        container.classList.add('map-locked');
+      }
+      function unlockMap() {
+        map.scrollWheelZoom.enable();
+        map.touchZoom.enable();
+        map.boxZoom.enable();
+        map.keyboard.enable();
+        map.dragging.enable();
+        if (map.tap) map.tap.enable();
+        container.classList.remove('map-locked');
+      }
+      lockMap();
+
+      // Helper overlay
+      const guard = document.createElement('div');
+      guard.className = 'nml-map-guard';
+      guard.innerHTML = `
+    <span>Click to interact · <kbd>Ctrl</kbd> + wheel to zoom</span>
+    <button type="button">Enable map</button>
+  `;
+      container.appendChild(guard);
+
+      guard.querySelector('button').addEventListener('click', () => {
+        unlockMap();
+        guard.style.display = 'none';
+      });
+
+      // Only allow wheel zoom with Ctrl
+      container.addEventListener('wheel', (e) => {
+        if (!e.ctrlKey) {
+          e.preventDefault();     // page keeps scrolling; map won’t zoom
+        } else if (!map.scrollWheelZoom.enabled()) {
+          unlockMap();
+          guard.style.display = 'none';
+        }
+      }, { passive: false });
+
+      // Re-lock when leaving the map
+      map.on('mouseout', () => {
+        lockMap();
+        guard.style.display = '';
+      });
+      map.on('touchend', () => {
+        lockMap();
+        guard.style.display = '';
+      });
+
+      /* ---------- (Optional) switch base layers programmatically ----------
+         Call setBase('hybrid') or setBase('street') from a UI button if you add one. */
+      let currentBase = street;
+      function setBase(which) {
+        if (map.hasLayer(currentBase)) map.removeLayer(currentBase);
+        currentBase = (which === 'hybrid') ? hybrid : street;
+        map.addLayer(currentBase);
+      }
+      // Example: setBase('street'); setBase('hybrid');
+    })();
+  </script>
+
+
+
+  <script>(() => {
+      const SELECTOR = '.reveal-left, .reveal-right, .reveal-up, .reveal-down';
+
+      // Apply per-element delay from data attribute if provided
+      document.querySelectorAll(SELECTOR).forEach(el => {
+        const d = el.getAttribute('data-reveal-delay');
+        if (d) el.style.setProperty('--reveal-delay', /^\d+$/.test(d) ? `${d}ms` : d);
+      });
+
+      // Auto-stagger children inside a .reveal-group
+      document.querySelectorAll('.reveal-group[data-reveal-stagger]').forEach(group => {
+        const step = parseInt(group.dataset.revealStagger, 10) || 120; // ms
+        let i = 0;
+        group.querySelectorAll(SELECTOR).forEach(el => {
+          el.style.setProperty('--reveal-delay', `${i * step}ms`);
+          i++;
+        });
+      });
+
+      // Observe and toggle visibility (replays when scrolling back unless .reveal-once)
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(({ target, isIntersecting }) => {
+          if (isIntersecting) target.classList.add('is-visible');
+          else if (!target.classList.contains('reveal-once'))
+            target.classList.remove('is-visible');
+        });
+      }, { threshold: 0.18 });
+
+      document.querySelectorAll(SELECTOR).forEach(el => io.observe(el));
+    })();</script>
+  <script defer src="{% static 'js/neplan.js'%}"></script>
+  <script src="{% static 'js/main.js'%}"></script>
+  <script>
+    (function () {
+      const mapEl = document.getElementById('nml-map');
+
+      // 1) Base "Map" (street) layer
+      const street = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        { maxZoom: 19, attribution: '&copy; OpenStreetMap' }
+      );
+
+      // 2) Hybrid = satellite imagery + transparent labels overlay
+      const imagery = L.tileLayer(
+        'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{x}/{y}',
+        { maxZoom: 19, attribution: 'Tiles &copy; Esri - World Imagery' }
+      );
+      const labels = L.tileLayer(
+        'https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png',
+        {
+          subdomains: 'abcd',
+          maxZoom: 20,
+          opacity: 0.95,
+          attribution: '&copy; OpenStreetMap contributors & CartoDB'
+        }
+      );
+      // LayerGroup allows us to add/remove both at once
+      const hybrid = L.layerGroup([imagery, labels]);
+
+      // Create map with default street layer
+      const map = L.map(mapEl, {
+        center: [-15, 120],
+        zoom: 3,
+        layers: [street],
+        zoomControl: true
+      });
+
+      // --- Your markers section (unchanged) ---
+      const LOCS = [
+        { title: 'Australia – Sydney', lat: -33.723524, lng: 150.875902, g: 'https://www.google.com/maps?ll=-33.723524,150.875902&z=5&t=m&hl=en-US&gl=US&mapclient=embed&cid=2860432314088839065' },
+        { title: 'India – Pune', lat: 18.4597518, lng: 73.8199254, g: 'https://maps.app.goo.gl/bDasJq7fErqsphp97' },
+        { title: 'Fiji – Suva', lat: -18.1654467, lng: 178.1218869, g: 'https://maps.app.goo.gl/cDMZMfo9R9Mfdm2Z7' },
+      ];
+      const pin = L.icon({
+        iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
+        iconAnchor: [12, 41], popupAnchor: [0, -34]
+      });
+      const group = L.featureGroup();
+      LOCS.forEach(p => {
+        L.marker([p.lat, p.lng], { icon: pin })
+          .bindPopup(`<strong>${p.title}</strong><br>
+                  <a href="${p.g}" target="_blank" rel="noopener">Open in Google Maps</a>`)
+          .addTo(group);
+      });
+      group.addTo(map);
+      map.fitBounds(group.getBounds().pad(0.3));
+
+      // Set "View larger map" link by center/zoom
+      const viewLink = document.getElementById('nml-view-link');
+      function updateViewLink() {
+        const c = map.getCenter();
+        viewLink.href = `https://www.google.com/maps/@${c.lat.toFixed(5)},${c.lng.toFixed(5)},${map.getZoom()}z`;
+      }
+      map.on('moveend zoomend', updateViewLink);
+      updateViewLink();
+
+      // --- Toggle between street and hybrid ---
+      const toggles = document.querySelectorAll('.nml-toggle');
+      let currentBase = street;           // track current base for removal
+
+      function setBase(which) {
+        if (map.hasLayer(currentBase)) map.removeLayer(currentBase);
+        currentBase = (which === 'hybrid') ? hybrid : street;
+        map.addLayer(currentBase);
+      }
+
+      toggles.forEach(btn => {
+        btn.addEventListener('click', () => {
+          toggles.forEach(b => b.classList.remove('is-active'));
+          btn.classList.add('is-active');
+          setBase(btn.dataset.layer);
+        });
+      });
+    })();
+  </script>
+
+  <script>
+    (function () {
+      const mapEl = document.getElementById('nml-map');
+
+      /* ---------- Base layers ---------- */
+      const street = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        { maxZoom: 19, attribution: '&copy; OpenStreetMap' }
+      );
+
+      // Hybrid = imagery + transparent labels
+      const imagery = L.tileLayer(
+        'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{x}/{y}',
+        { maxZoom: 19, attribution: 'Tiles &copy; Esri - World Imagery' }
+      );
+      const labels = L.tileLayer(
+        'https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png',
+        { subdomains: 'abcd', maxZoom: 20, opacity: 0.95, attribution: '&copy; OpenStreetMap & Carto' }
+      );
+      const hybrid = L.layerGroup([imagery, labels]);
+
+      /* ---------- Map ---------- */
+      const map = L.map(mapEl, {
+        center: [-15, 120],
+        zoom: 3,
+        layers: [street],
+        zoomControl: true
+      });
+
+      /* ---------- Pins ---------- */
+      const LOCS = [
+        { title: 'Australia – Sydney', lat: -33.723524, lng: 150.875902, g: 'https://www.google.com/maps?q=-33.723524,150.875902' },
+        { title: 'India – Pune', lat: 18.4597518, lng: 73.8225003, g: 'https://www.google.com/maps?q=18.4597518,73.8225003' },
+        { title: 'Fiji – Suva', lat: -18.1642523, lng: 177.6272352, g: 'https://www.google.com/maps?q=-18.1642523,177.6272352' },
+      ];
+      const pin = L.icon({
+        iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
+        iconAnchor: [12, 41], popupAnchor: [0, -34]
+      });
+      const group = L.featureGroup();
+      LOCS.forEach(p => {
+        L.marker([p.lat, p.lng], { icon: pin })
+          .bindPopup(`<strong>${p.title}</strong><br>
+                  <a href="${p.g}" target="_blank" rel="noopener">Open in Google Maps</a>`)
+          .addTo(group);
+      });
+      group.addTo(map);
+      map.fitBounds(group.getBounds().pad(0.3));
+
+      /* ---------- Update “View larger map” link ---------- */
+      const viewLink = document.getElementById('nml-view-link');
+      function updateViewLink() {
+        const c = map.getCenter();
+        viewLink.href = `https://www.google.com/maps/@${c.lat.toFixed(5)},${c.lng.toFixed(5)},${map.getZoom()}z`;
+      }
+      map.on('moveend zoomend', updateViewLink);
+      updateViewLink();
+
+      /* ---------- Lock / enable interaction ---------- */
+      const container = map.getContainer();
+
+      function lockMap() {
+        map.scrollWheelZoom.disable();
+        map.touchZoom.disable();
+        map.boxZoom.disable();
+        map.keyboard.disable();
+        map.dragging.disable();
+        if (map.tap) map.tap.disable();
+        container.classList.add('map-locked');
+      }
+      function unlockMap() {
+        map.scrollWheelZoom.enable();
+        map.touchZoom.enable();
+        map.boxZoom.enable();
+        map.keyboard.enable();
+        map.dragging.enable();
+        if (map.tap) map.tap.enable();
+        container.classList.remove('map-locked');
+      }
+      lockMap();
+
+      // Helper overlay
+      const guard = document.createElement('div');
+      guard.className = 'nml-map-guard';
+      guard.innerHTML = `
+    <span>Click to interact · <kbd>Ctrl</kbd> + wheel to zoom</span>
+    <button type="button">Enable map</button>
+  `;
+      container.appendChild(guard);
+
+      guard.querySelector('button').addEventListener('click', () => {
+        unlockMap();
+        guard.style.display = 'none';
+      });
+
+      // Only allow wheel zoom with Ctrl
+      container.addEventListener('wheel', (e) => {
+        if (!e.ctrlKey) {
+          e.preventDefault();     // page keeps scrolling; map won’t zoom
+        } else if (!map.scrollWheelZoom.enabled()) {
+          unlockMap();
+          guard.style.display = 'none';
+        }
+      }, { passive: false });
+
+      // Re-lock when leaving the map
+      map.on('mouseout', () => {
+        lockMap();
+        guard.style.display = '';
+      });
+      map.on('touchend', () => {
+        lockMap();
+        guard.style.display = '';
+      });
+
+      /* ---------- (Optional) switch base layers programmatically ----------
+         Call setBase('hybrid') or setBase('street') from a UI button if you add one. */
+      let currentBase = street;
+      function setBase(which) {
+        if (map.hasLayer(currentBase)) map.removeLayer(currentBase);
+        currentBase = (which === 'hybrid') ? hybrid : street;
+        map.addLayer(currentBase);
+      }
+      // Example: setBase('street'); setBase('hybrid');
+    })();
+  </script>
+
+  <!-- for download button -->
+
+
+  <script>
+    (() => {
+      if (window.__downloadFormBound) return;
+      window.__downloadFormBound = true;
+
+      const form = document.getElementById('csc-form');
+      const btns = document.querySelectorAll('.request-download-csc-solar-system-csc-products');
+      const docEl = document.getElementById('csc-doc-name');
+      const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]')?.value || "";
+
+      btns.forEach(b => b.addEventListener('click', () => {
+        docEl.value = b.getAttribute('data-doc') || '';
+      }));
+
+      function triggerDownload(url) {
+        const a = document.createElement('a');
+        a.href = url; a.download = "";
+        document.body.appendChild(a); a.click(); a.remove();
+      }
+
+      let isSubmitting = false;
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        if (isSubmitting) return;
+        isSubmitting = true;
+
+        try {
+          const res = await fetch('{% url "cmmsApp:request_download" %}', {
+            method: 'POST',
+            headers: { 'X-CSRFToken': csrftoken },
+            body: new FormData(form),
+            credentials: 'same-origin'
+          });
+
+          let data = null;
+          const ct = res.headers.get('content-type') || '';
+          data = ct.includes('application/json') ? await res.json() : { ok: false, error: `Server returned ${res.status}` };
+
+          if (!res.ok || !data.ok) {
+            alert(data.error || 'Something went wrong. Please try again.');
+            return;
+          }
+
+          if (data.download_url) {
+            sessionStorage.setItem('lastDownloadURL', data.download_url);
+            triggerDownload(data.download_url);
+          }
+          // Redirect to Thank You
+          window.location.href = '{% url "cmmsApp:contact_thanks" %}';
+
+        } catch (err) {
+          console.error(err);
+          alert('Network error. Please try again.');
+        } finally {
+          isSubmitting = false;
+        }
+      });
+    })();
+  </script>
+
+
+</body>
+
+</html>
