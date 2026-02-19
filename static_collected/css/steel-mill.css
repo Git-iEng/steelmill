@@ -1,0 +1,1098 @@
+
+/* ---------------- HERO / SLIDER ---------------- */
+:root {
+  --nav-height-steel-mill: 60px;
+  --maxw-steel-mill: 1400px;
+  --accent-steel-mill: #ff5a00;
+  --text-steel-mill: #fff;
+  --muted-steel-mill: #d9d9d9;
+}
+
+/* Scope typography + box sizing to hero */
+.hero-steel-mill * {
+  box-sizing: border-box;
+  font-family: "Poppins", system-ui, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.hero-steel-mill.steel-mill {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin-top: var(--nav-height-steel-mill);
+  overflow: hidden;
+}
+
+.slider-container-steel-mill {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-steel-mill {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.9s ease-in-out;
+}
+
+.active-steel-mill {
+  opacity: 1;
+  z-index: 1;
+}
+
+.overlay-steel-mill {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.inner-steel-mill {
+  position: relative;
+  height: 100%;
+  max-width: var(--maxw-steel-mill);
+  margin: 0 auto;
+  padding-inline: 24px;
+}
+
+.content-steel-mill {
+  position: absolute;
+  top: 16%;
+  left: 24px;
+  width: min(920px, 70vw);
+  color: var(--text-steel-mill);
+  text-align: left;
+}
+
+.eyebrow-steel-mill {
+  color: var(--muted-steel-mill);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.title-steel-mill {
+  font-weight: 800;
+  line-height: 1.06;
+  font-size: clamp(36px, 5.2vw, 72px);
+  margin: 0 0 16px;
+}
+
+.desc-steel-mill {
+  color: #d0d0d0;
+  font-size: clamp(14px, 1.3vw, 18px);
+  margin: 0 0 22px;
+}
+
+.btn-steel-mill {
+  display: inline-block;
+  background: var(--accent-steel-mill);
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 22px;
+  font-weight: 700;
+  border-radius: 6px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.15s ease, filter 0.2s ease;
+}
+
+.btn-steel-mill:hover {
+  filter: brightness(1.06);
+  transform: translateY(-2px);
+}
+
+/* Right card */
+.card-steel-mill {
+  position: absolute;
+  right: clamp(16px, 3.5vw, 60px);
+  bottom: 54px;
+  width: 300px;
+  height: 130px;
+  background: #fff;
+  color: #111;
+  border-radius: 0;
+  padding: 20px;
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.28);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 3;
+}
+
+.card-kicker-steel-mill {
+  color: var(--accent-steel-mill);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.card-title-steel-mill {
+  font-size: 18px;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.card-link-steel-mill {
+  margin-top: auto;
+  color: var(--accent-steel-mill);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Slider arrows */
+.arrows-steel-mill {
+  position: absolute;
+  left: calc((100vw - var(--maxw-steel-mill)) / 2 + 150px);
+  bottom: 36px;
+  display: flex;
+  gap: 14px;
+  z-index: 5;
+}
+
+.prev-steel-mill,
+.next-steel-mill {
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.9);
+  color: #111;
+  font-size: 28px;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.prev-steel-mill:hover,
+.next-steel-mill:hover {
+  background: var(--accent-steel-mill);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Hero reveal helpers (if used by your steel-mill.js) */
+.reveal-up-steel-mill,
+.reveal-down-steel-mill,
+.reveal-left-steel-mill,
+.reveal-right-steel-mill {
+  opacity: 0;
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.reveal-up-steel-mill {
+  transform: translateY(60px);
+}
+.reveal-down-steel-mill {
+  transform: translateY(-60px);
+}
+.reveal-left-steel-mill {
+  transform: translateX(-60px);
+}
+.reveal-right-steel-mill {
+  transform: translateX(60px);
+}
+
+.revealed-steel-mill {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* Mobile / tablet */
+@media (max-width: 900px) {
+  .hero-steel-mill.steel-mill {
+    height: calc(90vh - var(--nav-height-steel-mill));
+    margin-top: var(--nav-height-steel-mill);
+  }
+
+  .inner-steel-mill {
+    max-width: 100%;
+    padding-inline: 12px;
+  }
+
+  .slide-steel-mill {
+    background-size: cover;
+    background-position: center bottom;
+  }
+
+  .content-steel-mill {
+    top: 14%;
+    left: 12px;
+    right: 12px;
+    width: auto;
+    transform: none;
+    text-align: left;
+  }
+
+  .eyebrow-steel-mill {
+    font-size: 11px;
+    margin-bottom: 4px;
+  }
+
+  .title-steel-mill {
+    font-size: 22px;
+    line-height: 1.18;
+    margin-bottom: 8px;
+  }
+
+  .desc-steel-mill {
+    font-size: 13px;
+    line-height: 1.45;
+    margin-bottom: 8px;
+  }
+
+  .card-steel-mill {
+    left: 12px;
+    right: 12px;
+    bottom: 18px;
+    width: auto;
+    height: auto;
+    padding: 14px;
+    border-radius: 4px;
+    gap: 6px;
+  }
+
+  .card-title-steel-mill {
+    font-size: 14px;
+    line-height: 1.35;
+  }
+
+  .arrows-steel-mill {
+    left: 12px;
+    transform: none;
+    bottom: 112px;
+    gap: 10px;
+  }
+
+  .prev-steel-mill,
+  .next-steel-mill {
+    width: 36px;
+    height: 36px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-steel-mill.steel-mill {
+    height: calc(86vh - var(--nav-height-steel-mill));
+  }
+
+  .slide-steel-mill {
+    background-position: center 100%;
+  }
+
+  .content-steel-mill {
+    top: 15%;
+  }
+
+  .title-steel-mill {
+    font-size: 20px;
+  }
+
+  .desc-steel-mill {
+    font-size: 12px;
+  }
+}
+
+/* ---------------- CORE VALUES SECTION (image + copy) ---------------- */
+:root {
+  --core-ink: #0f141b;
+  --core-muted: #667289;
+  --core-bg: #ffffff;
+  --core-chip: #ff6a2a;
+  --core-chip-2: #ff8a52;
+  --core-glass: rgba(16, 20, 28, 0.55);
+  --core-ring: rgba(255, 255, 255, 0.18);
+  --core-shadow: 0 22px 60px rgba(2, 8, 23, 0.25);
+}
+
+.core-wrap-core-steel-mill {
+  background: var(--core-bg);
+  color: var(--core-ink);
+  padding: clamp(20px, 1vw, 26px) 0;
+}
+
+.core-grid-core-steel-mill {
+  width: min(1200px, 92%);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: clamp(18px, 3vw, 28px);
+  align-items: start;
+}
+
+.core-media-core-steel-mill {
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--core-shadow);
+  margin: 0;
+}
+
+.core-media-core-steel-mill img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.core-badge-core-steel-mill {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 120px;
+  min-height: 180px;
+  padding: 16px 18px;
+  row-gap: 6px;
+  background: var(--core-glass);
+  backdrop-filter: blur(6px) saturate(120%);
+  border: 1px solid var(--core-ring);
+  color: #fff;
+}
+
+.core-years-core-steel-mill {
+  font-size: clamp(2.2rem, 5.8vw, 3.2rem);
+  font-weight: 900;
+  line-height: 0.9;
+}
+
+.core-note-core-steel-mill {
+  margin-top: 6px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  opacity: 0.95;
+  line-height: 1.15;
+}
+
+.core-copy-core-steel-mill {
+  padding-top: 6px;
+}
+
+.core-kicker-core-steel-mill {
+  margin: 0 0 8px;
+  font-weight: 900;
+  letter-spacing: 0.35px;
+  color: #ff946b;
+}
+
+.core-title-core-steel-mill {
+  margin: 0.1rem 0 0.7rem;
+  font-size: clamp(1.6rem, 3.4vw, 2.2rem);
+  line-height: 1.15;
+  font-weight: 900;
+}
+
+.core-lead-core-steel-mill {
+  margin: 0 0 1rem;
+  color: var(--core-muted);
+  line-height: 1.65;
+}
+
+/* Responsive for core grid */
+@media (max-width: 960px) {
+  .core-grid-core-steel-mill {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .core-badge-core-steel-mill {
+    width: 110px;
+    min-height: 160px;
+    padding: 12px 14px;
+  }
+
+  .core-years-core-steel-mill {
+    font-size: clamp(1.8rem, 8vw, 2.4rem);
+  }
+}
+
+/* Desktop: equal height columns */
+@media (min-width: 961px) {
+  .core-grid-core-steel-mill {
+    align-items: stretch;
+  }
+
+  .core-media-core-steel-mill,
+  .core-copy-core-steel-mill {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .core-media-core-steel-mill img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex: 1 1 auto;
+  }
+
+  .core-copy-core-steel-mill {
+    justify-content: flex-start;
+  }
+
+  .core-copy-core-steel-mill > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Core reveal helpers (if used by your observer) */
+.reveal-left-core-steel-mill,
+.reveal-right-core-steel-mill,
+.reveal-up-core-steel-mill,
+.reveal-down-core-steel-mill {
+  opacity: 0;
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+  will-change: transform, opacity;
+}
+
+.reveal-left-core-steel-mill {
+  transform: translateX(-18px);
+}
+.reveal-right-core-steel-mill {
+  transform: translateX(18px);
+}
+.reveal-up-core-steel-mill {
+  transform: translateY(18px);
+}
+.reveal-down-core-steel-mill {
+  transform: translateY(-18px);
+}
+
+.is-visible-core-steel-mill {
+  opacity: 1;
+  transform: none;
+}
+:root{
+  --core-ink: #0f141b;
+  --core-muted: #667289;
+  --core-bg: #ffffff;
+  --core-chip: #ff6a2a;
+  --core-chip-2: #ff8a52;
+  --core-glass: rgba(16, 20, 28, 0.55);
+  --core-ring: rgba(255, 255, 255, 0.18);
+  --core-shadow: 0 22px 60px rgba(2, 8, 23, 0.25);
+}
+.section-steel-meel-parts{
+  background: var(--core-bg);
+  padding: 90px 0;
+  color: var(--core-ink);
+}
+
+.container-steel-meel-parts{
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.head-steel-meel-parts{
+  margin-bottom: 44px;
+}
+
+.kicker-steel-meel-parts{
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--core-chip);
+  margin: 0 0 12px;
+}
+
+.title-steel-meel-parts{
+  margin: 0;
+  font-size: clamp(30px, 3.8vw, 46px);
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+/* ROW 1 */
+.row-two-steel-meel-parts{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  margin-bottom: 28px;
+}
+
+/* Cards */
+.card-steel-meel-parts{
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: var(--core-shadow);
+  padding: 22px;
+  overflow: hidden;
+  transition: transform 240ms ease, box-shadow 240ms ease;
+}
+
+.card-steel-meel-parts:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 30px 70px rgba(2, 8, 23, 0.32);
+}
+
+.media-steel-meel-parts{
+  position: relative;
+}
+
+.image-steel-meel-parts{
+  width: 100%;
+  height:auto;
+  border-radius: 12px;
+  object-fit: cover;
+  display: block;
+}
+
+.chip-steel-meel-parts{
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--core-chip), var(--core-chip-2));
+  color: #111;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+.card-title-steel-meel-parts{
+  margin: 18px 0 10px;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.card-text-steel-meel-parts{
+  margin: 0 0 12px;
+  color: var(--core-muted);
+  line-height: 1.55;
+}
+
+.points-steel-meel-parts{
+  margin: 0;
+  padding-left: 18px;
+}
+
+.points-steel-meel-parts li{
+  margin: 6px 0;
+  color: var(--core-muted);
+}
+
+/* ROW 2 + ROW 3 WIDE CARDS */
+.wide-card-steel-meel-parts{
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: var(--core-shadow);
+  padding: 26px;
+  margin-bottom: 28px;
+}
+
+.wide-head-steel-meel-parts{
+  margin-bottom: 18px;
+}
+
+.wide-title-steel-meel-parts{
+  margin: 0 0 6px;
+  font-size: 26px;
+  font-weight: 950;
+}
+
+.wide-subtitle-steel-meel-parts{
+  margin: 0;
+  color: var(--core-muted);
+  line-height: 1.55;
+}
+
+.wide-grid-steel-meel-parts{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 18px;
+}
+
+.wide-block-steel-meel-parts{
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(15,20,27,0.06);
+  background: rgba(15,20,27,0.02);
+}
+
+.wide-image-steel-meel-parts{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.wide-body-steel-meel-parts{
+  padding: 18px;
+}
+
+.wide-block-title-steel-meel-parts{
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: 950;
+}
+
+.wide-text-steel-meel-parts{
+  margin: 0 0 12px;
+  color: var(--core-muted);
+  line-height: 1.6;
+}
+
+/* Mobile */
+@media (max-width: 920px){
+  .row-two-steel-meel-parts,
+  .wide-grid-steel-meel-parts{
+    grid-template-columns: 1fr;
+  }
+
+  .image-steel-meel-parts{
+    height: 200px;
+  }
+
+  .wide-image-steel-meel-parts{
+    height: 200px;
+  }
+}
+/* ===================== REVEAL (steel-meel-parts) ===================== */
+.reveal-steel-meel-parts{
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 650ms ease, transform 650ms ease;
+  will-change: opacity, transform;
+}
+
+.reveal-top-steel-meel-parts{
+  transform: translateY(-18px);
+}
+
+.reveal-bottom-steel-meel-parts{
+  transform: translateY(18px);
+}
+
+.reveal-left-steel-meel-parts{
+  transform: translateX(-18px);
+}
+
+.reveal-right-steel-meel-parts{
+  transform: translateX(18px);
+}
+
+/* visible state */
+.reveal-steel-meel-parts.is-visible-steel-meel-parts{
+  opacity: 1;
+  transform: translate(0,0);
+}
+
+/* Reduce motion support */
+@media (prefers-reduced-motion: reduce){
+  .reveal-steel-meel-parts{
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
+.section-applications-steel-meel-parts{
+  background: var(--core-bg);
+  padding: 20px 0;
+  color: var(--core-ink);
+}
+
+.container-applications-steel-meel-parts{
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.head-applications-steel-meel-parts{
+  margin-bottom: 36px;
+  max-width: 1120px;
+}
+
+.kicker-applications-steel-meel-parts{
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--core-chip);
+}
+
+.title-applications-steel-meel-parts{
+  margin: 0 0 12px;
+  font-size: clamp(30px, 3.8vw, 46px);
+  line-height: 1.1;
+  font-weight: 950;
+}
+
+.lead-applications-steel-meel-parts{
+  margin: 0;
+  color: var(--core-muted);
+  line-height: 1.65;
+  font-size: 16px;
+}
+
+.grid-applications-steel-meel-parts{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+.card-applications-steel-meel-parts{
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: var(--core-shadow);
+  padding: 22px;
+  border: 1px solid rgba(15, 20, 27, 0.06);
+  transition: transform 220ms ease, box-shadow 220ms ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-applications-steel-meel-parts::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: linear-gradient(120deg, rgba(255,106,42,0.10), rgba(255,138,82,0.06));
+  opacity: 0;
+  transition: opacity 220ms ease;
+  pointer-events:none;
+}
+
+.card-applications-steel-meel-parts:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 30px 70px rgba(2, 8, 23, 0.32);
+}
+
+.card-applications-steel-meel-parts:hover::before{
+  opacity: 1;
+}
+
+.top-applications-steel-meel-parts{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 14px;
+}
+
+.chip-applications-steel-meel-parts{
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  color: #111;
+  background: linear-gradient(90deg, var(--core-chip), var(--core-chip-2));
+}
+
+.card-title-applications-steel-meel-parts{
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: 950;
+  color: var(--core-ink);
+}
+
+.card-text-applications-steel-meel-parts{
+  margin: 0;
+  color: var(--core-muted);
+  line-height: 1.65;
+}
+
+/* Mobile */
+@media (max-width: 900px){
+  .grid-applications-steel-meel-parts{
+    grid-template-columns: 1fr;
+  }
+}
+/* ================================
+   Steel Mill Services (Cards + Detail)
+   Works with your existing HTML classes/IDs
+   ================================ */
+
+/* Theme tokens */
+:root{
+  --sm-bg: #0f172a;
+  --sm-card: #ffffff;
+  --sm-text: #0f172a;
+  --sm-muted: #475569;
+  --sm-border: rgba(15, 23, 42, 0.10);
+  --sm-shadow: 0 18px 50px rgba(2, 6, 23, 0.18);
+  --sm-shadow-soft: 0 10px 26px rgba(2, 6, 23, 0.12);
+  --sm-accent: #2563eb;      /* primary */
+  --sm-accent-2: #f97316;    /* warm highlight */
+  --sm-radius: 18px;
+  --sm-radius-sm: 12px;
+}
+
+/* Section background + overlap effect */
+.section-services-steel-mill-services2{
+  position: relative;
+  padding: clamp(28px, 5vw, 56px) 0 64px;
+  background:
+    radial-gradient(1200px 450px at 12% -10%, rgba(249,115,22,.22), transparent 60%),
+    radial-gradient(900px 380px at 75% 0%, rgba(37,99,235,.18), transparent 55%),
+    linear-gradient(135deg, #0b1222, #1f2937);
+  overflow: hidden;
+}
+
+/* Overlapping white card container */
+.services-card-steel-mill-services{
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  background: var(--sm-card);
+  border: 1px solid var(--sm-border);
+  border-radius: var(--sm-radius);
+  box-shadow: var(--sm-shadow);
+  padding: clamp(18px, 2.8vw, 30px);
+  transform: translateY(-36px); /* overlap into the dark hero like your screenshot */
+}
+
+/* Grid */
+.grid-steel-mill-services{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  align-items: start;
+}
+
+/* Responsive grid */
+@media (max-width: 980px){
+  .grid-steel-mill-services{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px){
+  .services-card-steel-mill-services{ transform: translateY(-24px); }
+  .grid-steel-mill-services{ grid-template-columns: 1fr; }
+}
+
+/* Service card */
+.svc-item-steel-mill-services{
+  position: relative;
+  background: #ffffff;
+  border: 1px solid var(--sm-border);
+  border-radius: var(--sm-radius-sm);
+  box-shadow: 0 2px 0 rgba(2,6,23,0.02);
+  padding: 18px 18px 16px;
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+  overflow: hidden;
+}
+
+/* subtle top accent line */
+.svc-item-steel-mill-services::before{
+  content:"";
+  position:absolute;
+  left:0; top:0;
+  width:100%; height:4px;
+  background: linear-gradient(90deg, var(--sm-accent), var(--sm-accent-2));
+  opacity: .95;
+}
+
+/* hover */
+.svc-item-steel-mill-services:hover{
+  transform: translateY(-4px);
+  box-shadow: var(--sm-shadow-soft);
+  border-color: rgba(37, 99, 235, 0.25);
+}
+
+/* Optional icon bubble (you left it empty, still looks nice) */
+.svc-icon-steel-mill-services{
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background:
+    radial-gradient(18px 18px at 30% 30%, rgba(249,115,22,.35), transparent 60%),
+    radial-gradient(22px 22px at 70% 70%, rgba(37,99,235,.35), transparent 62%),
+    linear-gradient(135deg, rgba(15,23,42,.06), rgba(15,23,42,.02));
+  border: 1px solid rgba(2,6,23,0.06);
+  margin-bottom: 12px;
+}
+
+/* Title + link */
+.svc-title-steel-mill-services{
+  font-size: 16px;
+  line-height: 1.25;
+  margin: 0 0 10px;
+  color: var(--sm-text);
+  letter-spacing: -0.2px;
+}
+.svc-title-steel-mill-services a{
+  color: inherit;
+  text-decoration: none;
+}
+.svc-title-steel-mill-services a:hover{
+  color: var(--sm-accent);
+}
+
+/* Body text */
+.svc-text-steel-mill-services{
+  margin: 0 0 14px;
+  color: var(--sm-muted);
+  font-size: 13.5px;
+  line-height: 1.55;
+
+  /* keeps card heights tidy */
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* CTA button */
+.svc-cta-steel-mill-services{
+  appearance: none;
+  border: 1px solid rgba(37,99,235,.28);
+  background: rgba(37,99,235,.06);
+  color: var(--sm-accent);
+  border-radius: 999px;
+  padding: 10px 14px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: background .18s ease, transform .18s ease, border-color .18s ease;
+}
+
+.svc-cta-steel-mill-services:hover{
+  background: rgba(37,99,235,.12);
+  border-color: rgba(37,99,235,.42);
+  transform: translateY(-1px);
+}
+
+.svc-cta-steel-mill-services:active{
+  transform: translateY(0);
+}
+
+.svc-cta-steel-mill-services:focus-visible{
+  outline: 3px solid rgba(37,99,235,.25);
+  outline-offset: 2px;
+}
+
+/* "Learn more" arrow text */
+.arrow-steel-mill-services{
+  position: relative;
+  padding-right: 16px;
+}
+.arrow-steel-mill-services::after{
+  content: "›";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-52%);
+  font-size: 18px;
+  line-height: 1;
+  opacity: .9;
+  transition: transform .18s ease;
+}
+.svc-cta-steel-mill-services:hover .arrow-steel-mill-services::after{
+  transform: translateY(-52%) translateX(2px);
+}
+
+/* Hidden fourth card (your JS toggles is-hidden) */
+.svc-item-steel-mill-services.is-hidden{
+  display: none;
+}
+
+/* ================================
+   Detail panel (the expandable block)
+   Put it INSIDE your grid (you already do)
+   Make it span full width and animate open
+   ================================ */
+.svc-detail-steel-mill-services{
+  grid-column: 1 / -1;
+  border-radius: var(--sm-radius-sm);
+  border: 1px solid rgba(15,23,42,0.12);
+  background:
+    radial-gradient(700px 220px at 10% 0%, rgba(249,115,22,.10), transparent 55%),
+    radial-gradient(700px 240px at 85% 10%, rgba(37,99,235,.10), transparent 55%),
+    #ffffff;
+
+  box-shadow: 0 10px 26px rgba(2, 6, 23, 0.10);
+  overflow: hidden;
+
+  /* collapsed by default until JS injects content */
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: max-height .35s ease, opacity .25s ease, transform .25s ease, margin .25s ease;
+
+  /* keep space tight when closed */
+  margin-top: 0;
+}
+
+/* When JS inserts content, most implementations will add innerHTML.
+   This selector makes it open as soon as it has any content. */
+.svc-detail-steel-mill-services:not(:empty){
+  max-height: 1200px; /* large enough for your content */
+  opacity: 1;
+  transform: translateY(0);
+  margin-top: 6px;
+}
+
+/* Detail content styling */
+.svc-detail-steel-mill-services h3,
+.svc-detail-steel-mill-services h4{
+  color: var(--sm-text);
+  margin: 0 0 10px;
+  letter-spacing: -0.2px;
+}
+.svc-detail-steel-mill-services p{
+  color: var(--sm-muted);
+  margin: 0 0 12px;
+  line-height: 1.65;
+  font-size: 14px;
+}
+.svc-detail-steel-mill-services ul{
+  margin: 0 0 14px 18px;
+  color: var(--sm-muted);
+  line-height: 1.65;
+  font-size: 14px;
+}
+.svc-detail-steel-mill-services li{
+  margin: 6px 0;
+}
+
+/* Nice padding wrapper if JS does not add one */
+.svc-detail-steel-mill-services > *{
+  padding: 18px 18px 6px;
+}
+.svc-detail-steel-mill-services > *:last-child{
+  padding-bottom: 18px;
+}
+
+/* ================================
+   Reveal animation (optional)
+   Works with your reveal-up-steel-mill-services class
+   ================================ */
+.reveal-up-steel-mill-services{
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+.reveal-up-steel-mill-services.is-visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================================
+   Small UX polish
+   ================================ */
+@media (prefers-reduced-motion: reduce){
+  .svc-item-steel-mill-services,
+  .svc-cta-steel-mill-services,
+  .svc-detail-steel-mill-services,
+  .reveal-up-steel-mill-services{
+    transition: none !important;
+  }
+}
+
+/* If your page uses a dark background above, reduce gap under overlap */
+#all-services{
+  scroll-margin-top: 90px;
+}
+
+
